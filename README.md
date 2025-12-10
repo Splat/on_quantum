@@ -70,3 +70,45 @@ Real quasiparticles live in **huge Hilbert spaces** (many sites / continuum mode
 
 So: we’re not reproducing full condensed-matter physics, we’re building **minimal Hamiltonians and circuits** that capture the _structure_ of the excitations.
 
+## 3. Example 1 – Magnons from a small Heisenberg chain
+
+We’ll model a **magnon** as a single spin flip delocalized over a short chain of spins.
+
+### Hamiltonian (isotropic Heisenberg with periodic boundary, N=3)
+
+- Ground state: all spins aligned (ferromagnetic case, J<0J < 0J<0).    
+- One-magnon manifold: states with exactly one spin flipped.    
+
+[Here](heisenberg_hamiltonian.py) is Qiskit code to:
+
+- Build the Heisenberg Hamiltonian for 3 qubits.    
+- Diagonalize it.    
+- Identify one-magnon-like eigenstates.
+
+What this gives you:
+- Eigenvectors with support mostly on ∣100⟩,∣010⟩,∣001⟩ etc.    
+- Those are your **discrete magnons** (spin waves on a 3-site ring).    
+
+You can then:
+- Prepare such eigenstates via variational circuits or Trotterized time evolution.    
+- Simulate magnon propagation by evolving an initial state like ∣100⟩.
+
+## 4. Example 2 – Exciton (electron–hole pair) as a 2-qubit model
+
+[Here](exciton_hamiltonian.py) We simplify an exciton to a 2-level electron and a 2-level hole:
+
+- Qubit 0: electron present (∣1⟩) vs absent (∣0⟩.
+- Qubit 1: hole present (∣1⟩) vs absent (∣0⟩).
+
+We’ll write a minimal Hamiltonian: H=ϵe​Z0​+ϵh​Z1​−g(X0​X1​+Y0​Y1​)
+`markdown needs better mathematic notation or I might be an way off`
+- The `Z` terms give on-site energies.
+- The `XX+YY` term couples electron and hole, creating / annihilating pairs → binding.
+  
+Interpretation:
+- ∣10⟩ = electron only, ∣01⟩ = hole only, ∣11⟩ = bound electron–hole (exciton), ∣00⟩ = vacuum.
+- The energy splitting and eigenstate composition show how coupling `g` mixes these configurations into an effective exciton quasiparticle.
+
+You can also:
+- Use qiskit_dynamics (if installed) to time-evolve an initially separated electron/hole and watch them form a bound state.
+
