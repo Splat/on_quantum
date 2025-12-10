@@ -17,38 +17,38 @@ These are _effective_ particles that emerge from many-body systems, usually in c
 
 ### Bosonic collective modes
 
-- **Phonons*-  
+- **Phonons**  
     - Lattice vibration quanta (sound/heat in solids).        
     - Come from quantized normal modes of ions in a crystal.        
-- **Magnons*-  
+- **Magnons**  
     - Spin-wave quanta in ordered magnets.        
     - Excitations of a lattice of interacting spins (e.g., Heisenberg model).        
-- **Plasmons*-  
+- **Plasmons**  
     - Collective oscillations of the free electron gas in a metal/semiconductor.        
     - Relevant to optical response, surface plasmons, etc.        
 - **Polaritons** (e.g., exciton-polaritons)    
     - Hybrid light–matter modes (photon + exciton).        
     - Seen in microcavities, strongly coupled systems.        
-- **Photonic quasiparticles in waveguides*-  
+- **Photonic quasiparticles in waveguides**  
     - Effective modes in photonic crystals, etc., often treated similarly to phonons/plasmons.        
 
 ### Fermionic (or effective fermionic) quasiparticles
 
-- **Electrons with effective mass (Landau quasiparticles)*-  
+- **Electrons with effective mass (Landau quasiparticles)**  
     - In Fermi liquids, interacting electrons behave like free ones but with renormalized parameters.        
-- **Holes*-  
+- **Holes**  
     - Absence of an electron in a filled band; behave as positive-charge carriers.        
-- **Excitons*-  
+- **Excitons**  
     - Bound electron–hole pair; bosonic (in the low-density limit).        
-- **Cooper pairs*-  
+- **Cooper pairs**  
     - Bound pairs of electrons in superconductors (effective bosons).        
 
 ### Dressed particles / combined
 
-- **Polarons*-  
+- **Polarons**  
     - An electron (or hole) dressed by a cloud of lattice distortion (phonons).        
     - Electron–phonon coupling problem.        
-- **Spinons, holons, orbitons*-  
+- **Spinons, holons, orbitons**  
     - In certain 1D/strongly correlated systems, spin/charge/orbital degrees of freedom can fractionalize into separate excitations.        
 
 ### Topological quasiparticles
@@ -56,7 +56,7 @@ These are _effective_ particles that emerge from many-body systems, usually in c
 - **Anyons** (Abelian and non-Abelian)    
     - Quasiparticles in 2D systems with statistics interpolating between bosons and fermions.        
     - Appear in fractional quantum Hall systems, toric-code models, etc.        
-- **Majorana zero modes*-  
+- **Majorana zero modes**  
     - Quasiparticles that are their own antiparticles in certain topological superconductors; candidate building blocks for topological quantum computing.
  
 ## 2. Qiskit modeling philosophy (important reality check)
